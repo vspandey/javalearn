@@ -10,9 +10,15 @@ jobs:
    runs-on: ubuntu-latest
    
    steps:
-     run: echo "Hello"
+     - uses: actions/checkout@v3
+       with:
+       
+         run: echo "Hello"
      
   job2:
     runs-on: ubuntu-latest
     steps:
-      run: echo "world"
+      - uses: actions/checkout@v3
+        with:
+       
+         run: echo "world"
